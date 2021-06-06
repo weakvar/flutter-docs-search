@@ -9,6 +9,7 @@
 		"documentation",
 		"api"
 	],
+	"icon": "logo.png",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.56.0"
@@ -20,6 +21,7 @@
 		"name": "Vladislav Len",
 		"url": "https://github.com/weakvar"
 	},
+	"publisher": "weakvar",
 	"homepage": "https://github.com/weakvar/flutter-docs-search",
 	"repository": {
 		"type": "git",
