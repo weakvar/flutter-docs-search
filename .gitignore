@@ -159,4 +159,7 @@ dist/
 tmp/
 temp/
 
+# VS Code Extension
+*.vsix
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,node
