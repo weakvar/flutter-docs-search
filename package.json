@@ -1,0 +1,79 @@
+{
+	"name": "flutter-docs-search",
+	"displayName": "Flutter Docs Search",
+	"description": "Instantly search Flutter API docs from VS Code",
+	"keywords": [
+		"flutter",
+		"docs",
+		"search",
+		"documentation",
+		"api"
+	],
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"author": {
+		"name": "Vladislav Len",
+		"url": "https://github.com/weakvar"
+	},
+	"homepage": "https://github.com/weakvar/flutter-docs-search",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/weakvar/flutter-docs-search"
+	},
+	"activationEvents": [
+		"onCommand:flutter-docs.searchSelection"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "flutter-docs.searchSelection",
+				"title": "Search API Docs",
+				"category": "Flutter",
+				"enablement": "editorHasSelection && editorLangId == dart"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "flutter-docs.searchSelection",
+					"when": "editorHasSelection",
+					"group": "4_search"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"command": "flutter-docs.searchSelection",
+				"key": "alt+shift+f",
+				"mac": "cmd+shift+f"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.56.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	}
+}
