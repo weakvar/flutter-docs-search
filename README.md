@@ -8,6 +8,10 @@ Select a code that you want to search and press `CMD+SHIFT+K` on macOS or `ALT+S
 
 ![example](https://github.com/weakvar/flutter-docs-search/raw/main/example.gif)
 
+## Installing
+
+Install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=weakvar.flutter-docs-search) or by searching within VS Code.
+
 ## Release Notes
 
 ### 1.0.0
