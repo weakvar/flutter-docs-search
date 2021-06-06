@@ -6,7 +6,7 @@ Instantly search Flutter API docs from VS Code
 
 Select a code that you want to search and press `CMD+SHIFT+K` on macOS or `ALT+SHIFT+K` on any other platform. Alternatively, you can right-click on the selection and press a Search API Docs button to make a search.
 
-![screenshot](https://github.com/weakvar/flutter-docs-search/raw/edit-readme/cover.gif)
+![screenshot](https://github.com/weakvar/flutter-docs-search/raw/edit-readme/example.gif)
 
 ## Release Notes
 
